@@ -6,6 +6,10 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {},
   mutations: {},
-  actions: {},
+  actions: {
+    createReminder ({}, message) {
+      console.log(`creating reminder: ${message}`)
+    }
+  },
   modules: {}
 });
